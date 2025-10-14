@@ -1,0 +1,40 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.AvailableProducts"
+    xmlns:plugins="sap.m.plugins"
+    xmlns:dnd="sap.ui.core.dnd"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    height="100%">
+
+    <Table
+        id="table"
+        mode="SingleSelectMaster"
+        growing="true"
+        growingThreshold="10"
+        items="{listas>/listA}">
+        
+        <headerToolbar>
+            <OverflowToolbar id="_IDGenOverflowToolbar1">
+                <Title id="_IDGenTitle1" text="Available Products" />
+            </OverflowToolbar>
+        </headerToolbar>
+
+        <columns>
+            <Column id="_IDGenColumn">
+                <Text id="_IDGenText" text="Product Name" />
+            </Column>
+        </columns>
+
+        <dragDropConfig>
+            <dnd:DragInfo id="_IDGenDragInfo" groupName="available2selected" sourceAggregation="items" />
+        </dragDropConfig>
+
+        <items>
+            <ColumnListItem id="_IDGenColumnListItem">
+                <cells>
+                    <Text id="_IDGenText2" text="{listas>name}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>

@@ -1,0 +1,45 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.SelectedProducts"
+    xmlns:plugins="sap.m.plugins"
+    xmlns:dnd="sap.ui.core.dnd"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    height="100%">
+
+    <Table
+        id="table2"
+        mode="SingleSelectMaster"
+        growing="true"
+        growingThreshold="10"
+        items="{listas>/selectedProducts}"
+        noDataText="Please drag-and-drop products here.">
+
+        <headerToolbar>
+            <OverflowToolbar id="_IDGenOverflowToolbar">
+                <Title id="_IDGenTitle" text="Selected Products" />
+            </OverflowToolbar>
+        </headerToolbar>
+
+        <columns>
+            <Column id="_IDGenColumn1">
+                <Text id="_IDGenText1" text="Product Name" />
+            </Column>
+        </columns>
+
+        <dragDropConfig>
+            <dnd:DropInfo id="_IDGenDropInfo"
+                groupName="available2selected"
+                targetAggregation="items"
+                dropPosition="Between"
+                drop="onDropAvailableProductsTable" />
+        </dragDropConfig>
+
+        <items>
+            <ColumnListItem id="_IDGenColumnListItem1">
+                <cells>
+                    <Text id="_IDGenText3" text="{listas>name}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>

@@ -1,0 +1,11 @@
+{
+  "listA": [
+    { "name": "Producto A1" },
+    { "name": "Producto A2" },
+    { "name": "Producto A3" },
+    { "name": "Producto A4" },
+    { "name": "Producto A5" }
+  ],
+  
+  "selectedProducts": []
+}

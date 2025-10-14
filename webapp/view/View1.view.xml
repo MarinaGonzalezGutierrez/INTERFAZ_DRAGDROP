@@ -1,0 +1,19 @@
+<mvc:View controllerName="ejercicio15.project1.controller.View1"
+    xmlns:dnd="sap.ui.core.dnd"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <Page id="page">
+        <content>
+            <HBox id="_IDGenHBox" renderType="Bare">
+                <mvc:XMLView id="availableProducts" viewName="ejercicio15.project1.view.AvailableProducts" async="true"/>
+                <VBox id="_IDGenVBox" justifyContent="Center" class="sapUiTinyMarginBeginEnd">
+                    <Button id="_IDGenButton" icon="sap-icon://navigation-right-arrow" tooltip="Move to selected" press="moveToSelectedProductsTable"/>
+                    <Button id="_IDGenButton1" icon="sap-icon://navigation-left-arrow" tooltip="Move to available" press="moveToAvailableProductsTable"/>
+                </VBox>
+                <mvc:XMLView id="selectedProducts" viewName="ejercicio15.project1.view.SelectedProducts" async="true"/>
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>
