@@ -8,7 +8,7 @@
     xmlns:card="sap.f.cards"
     >
 
-    <Page id="page21" title="Productos disponibles">
+    <Page id="page21" title="Productos disponibles" showNavButton="true" navButtonPress="onNavBack">
         <ScrollContainer id="_IDGenScrollContainer" height="100%" vertical="true">
             <VBox id="_IDGenVBox9" items="{productos1>/products}" class="sapUiSmallMargin">
                 <items>
