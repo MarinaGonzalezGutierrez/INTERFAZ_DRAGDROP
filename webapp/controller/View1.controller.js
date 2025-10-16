@@ -8,6 +8,11 @@ sap.ui.define([
             var oModel = new sap.ui.model.json.JSONModel();
             // oModel.loadData("listas.json"); // Si está en webapp/
             // this.getView().setModel(oModel);
-        }
+        },
+
+         onGoView21: function(){
+            var router1 = sap.ui.core.UIComponent.getRouterFor(this);
+            router1.navTo("View21");
+        },
     });
 });

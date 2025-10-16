@@ -1,0 +1,36 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.View21"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+    xmlns:card="sap.f.cards"
+    >
+
+    <Page id="page21" title="Productos disponibles">
+        <ScrollContainer id="_IDGenScrollContainer" height="100%" vertical="true">
+            <VBox id="_IDGenVBox9" items="{productos1>/products}" class="sapUiSmallMargin">
+                <items>
+                    <f:Card id="_IDGenCard" class="sapUiSmallMargin" width="300px">
+                        <f:header>
+                            <card:Header id="_IDGenHeader"
+                                title="{productos1>name}"
+                                subtitle="{productos1>category}"
+                                statusText="Disponible"/>
+                        </f:header>
+                        <f:content>
+                            <VBox id="_IDGenVBox10" class="sapUiSmallMargin">
+                                <Text id="_IDGenText43" text="Precio: {productos1>price} €"/>
+                                <Text id="_IDGenText44" text="Stock: {productos1>stock} unidades"/>
+                                <Image id="_IDGenImage" src="/img/{productos1>image}" width="80px" />
+                                <Button id="_IDGenButton10" text="Ver detalles" type="Emphasized" press="onProductPress"/>
+                            </VBox>
+                            
+                        </f:content>
+                    </f:Card>
+                </items>
+            </VBox>
+        </ScrollContainer>
+    </Page>
+</mvc:View>

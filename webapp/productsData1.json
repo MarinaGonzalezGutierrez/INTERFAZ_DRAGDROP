@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "P001",
+      "name": "Laptop Lenovo ThinkPad",
+      "category": "Electrónica",
+      "price": 899.99,
+      "stock": 25,
+      "image": "laptop.png"
+    },
+    {
+      "id": "P002",
+      "name": "Auriculares Sony WH-1000XM4",
+      "category": "Audio",
+      "price": 299.99,
+      "stock": 40,
+      "image": "auriculares.png"
+    },
+    {
+      "id": "P003",
+      "name": "Smartphone Samsung Galaxy S22",
+      "category": "Telefonía",
+      "price": 749.00,
+      "stock": 15,
+      "image": "samsung.png"
+    },
+    {
+      "id": "P004",
+      "name": "Monitor LG UltraWide 34''",
+      "category": "Electrónica",
+      "price": 499.50,
+      "stock": 10,
+      "image": "monitor.png"
+    },
+    {
+      "id": "P005",
+      "name": "Teclado mecánico Logitech G915",
+      "category": "Accesorios",
+      "price": 199.99,
+      "stock": 30,
+      "image": "teclado.png"
+    }
+  ]
+}

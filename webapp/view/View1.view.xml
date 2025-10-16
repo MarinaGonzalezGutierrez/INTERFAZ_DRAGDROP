@@ -15,5 +15,14 @@
                 <mvc:XMLView id="selectedProducts" viewName="ejercicio15.project1.view.SelectedProducts" async="true"/>
             </HBox>
         </content>
+
+    <Button id="botonView21" type="Accept"
+						text="Tarjeta de producto"
+						press="onGoView21">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData" growFactor="1" />
+					</layoutData>
+				</Button>
     </Page>
 </mvc:View>

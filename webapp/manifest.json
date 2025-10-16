@@ -57,6 +57,11 @@
        "listas": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "listas.json"
+      },
+
+      "productos1":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "productsData1.json"
       }
     },
     "resources": {
@@ -85,12 +90,25 @@
           "target": [
             "TargetView1"
           ]
+        },
+
+        {
+          "name": "View21",
+          "pattern": "View21",
+          "target": [
+            "TargetView21"
+          ]
         }
       ],
       "targets": {
         "TargetView1": {
           "id": "View1",
           "name": "View1"
+        },
+
+         "TargetView21": {
+          "id": "View21",
+          "name": "View21"
         }
       }
     },
