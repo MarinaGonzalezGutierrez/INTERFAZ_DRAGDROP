@@ -34,6 +34,16 @@
 					</layoutData>
 				</Button>
 
+
+    <Button id="botonView24" type="Accept"
+						text="BusyIndicator"
+						press="onGoView24">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData4" growFactor="1" />
+					</layoutData>
+				</Button>
+
     </Page>
     
 </mvc:View>

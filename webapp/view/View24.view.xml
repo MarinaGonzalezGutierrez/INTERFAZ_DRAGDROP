@@ -1,0 +1,17 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.View24"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:dnd="sap.ui.core.dnd"
+    height="100%">
+
+    <Page id="page24" title="BusyIndicator">
+        <content>
+            
+  <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+    <Button id="_IDGenButton2" text="Cargar datos" press="onLoadData" />
+  </VBox>
+
+        </content>
+    </Page>
+</mvc:View>

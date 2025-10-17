@@ -111,6 +111,14 @@
           "target": [
             "TargetView23"
           ]
+        },
+
+        {
+          "name": "View24",
+          "pattern": "View24",
+          "target": [
+            "TargetView24"
+          ]
         }
       ],
       "targets": {
@@ -127,6 +135,11 @@
          "TargetView23": {
           "id": "View23",
           "name": "View23"
+        },
+
+         "TargetView24": {
+          "id": "View24",
+          "name": "View24"
         }
       }
     },
