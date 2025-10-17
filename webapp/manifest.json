@@ -67,6 +67,11 @@
       "tasks":{
         "type": "sap.ui.model.json.JSONModel",
         "uri": "tasks.json"
+      },
+
+      "clientes":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "clientes.json"
       }
     },
     "resources": {
@@ -119,6 +124,14 @@
           "target": [
             "TargetView24"
           ]
+        },
+
+        {
+          "name": "View25",
+          "pattern": "View25",
+          "target": [
+            "TargetView25"
+          ]
         }
       ],
       "targets": {
@@ -140,6 +153,11 @@
          "TargetView24": {
           "id": "View24",
           "name": "View24"
+        },
+
+         "TargetView25": {
+          "id": "View25",
+          "name": "View25"
         }
       }
     },

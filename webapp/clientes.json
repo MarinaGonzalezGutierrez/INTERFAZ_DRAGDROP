@@ -1,0 +1,36 @@
+{
+  "clientes": [
+    {
+      "id": "C001",
+      "nombre": "María López",
+      "email": "maria.lopez@example.com",
+      "telefono": "+34 612 345 678",
+      "direccion": "Calle Mayor 12, Madrid",
+      "activo": true
+    },
+    {
+      "id": "C002",
+      "nombre": "Juan Pérez",
+      "email": "juan.perez@example.com",
+      "telefono": "+34 622 987 654",
+      "direccion": "Av. de Asturias 45, Oviedo",
+      "activo": false
+    },
+    {
+      "id": "C003",
+      "nombre": "Laura García",
+      "email": "laura.garcia@example.com",
+      "telefono": "+34 633 123 456",
+      "direccion": "Calle del Sol 8, Valencia",
+      "activo": true
+    },
+    {
+      "id": "C004",
+      "nombre": "Carlos Ruiz",
+      "email": "carlos.ruiz@example.com",
+      "telefono": "+34 644 321 789",
+      "direccion": "Paseo de Gracia 22, Barcelona",
+      "activo": true
+    }
+  ]
+}

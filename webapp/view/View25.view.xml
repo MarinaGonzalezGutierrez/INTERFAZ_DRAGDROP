@@ -1,0 +1,62 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.View25"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+>
+    <ObjectPageLayout
+        id="_IDGenObjectPageLayout"
+        showTitleInHeaderContent="true"
+    >
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle">
+                <expandedHeading>
+                    <m:Title id="_IDGenTitle2" text="My Project Ideas" />
+                </expandedHeading>
+                <snappedHeading>
+                    <m:Title id="_IDGenTitle3" text="My Project Ideas" />
+                </snappedHeading>
+                <expandedContent>
+                    <m:Text id="_IDGenText4" text="SAP UI5 Object Page Layout" />
+                </expandedContent>
+                <snappedContent>
+                    <m:Text id="_IDGenText5" text="SAP UI5 Object Page Layout" />
+                </snappedContent>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+
+        <headerContent>
+            <m:Button id="_IDGenButton3"
+                text="Mostrar/Ocultar Clientes"
+                press="onToggleClientes"
+                type="Emphasized"
+            />
+        </headerContent>
+
+        <sections>
+            <ObjectPageSection id="clientesSection" title="Clientes">
+                <ObjectPageSubSection id="clientesSubSection">
+                    <blocks>
+                        <m:VBox id="clientesVBox" visible="false">
+                            <m:Text id="_IDGenText6" text="Información detallada de los clientes:" />
+                            <m:List
+                                id="clientesList"
+                                headerText="Lista de Clientes"
+                                items="{clientes>/clientes}"
+                            >
+                                <m:StandardListItem id="_IDGenStandardListItem1"
+                                    title="{clientes>nombre}"
+                                    description="{clientes>email}"
+                                    info="{clientes>telefono}"
+                                    icon="sap-icon://customer"
+                                />
+                            </m:List>
+                        </m:VBox>
+                    </blocks>
+                </ObjectPageSubSection>
+            </ObjectPageSection>
+        </sections>
+    </ObjectPageLayout>
+</mvc:View>

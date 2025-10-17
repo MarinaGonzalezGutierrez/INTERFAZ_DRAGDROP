@@ -44,6 +44,17 @@
 					</layoutData>
 				</Button>
 
-    </Page>
+
+    <Button id="botonView25" type="Accept"
+						text="ObjectPageLayout"
+						press="onGoView25">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData5" growFactor="1" />
+					</layoutData>
+				</Button>
+
     
+
+    </Page>
 </mvc:View>
