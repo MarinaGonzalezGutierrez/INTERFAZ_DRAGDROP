@@ -21,8 +21,19 @@
 						press="onGoView21">
 						
 					<layoutData>
-						<FlexItemData id="_IDGenFlexItemData" growFactor="1" />
+						<FlexItemData id="_IDGenFlexItemData2" growFactor="1" />
 					</layoutData>
 				</Button>
+
+    <Button id="botonView23" type="Accept"
+						text="Lista de tareas"
+						press="onGoView23">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData3" growFactor="1" />
+					</layoutData>
+				</Button>
+
     </Page>
+    
 </mvc:View>

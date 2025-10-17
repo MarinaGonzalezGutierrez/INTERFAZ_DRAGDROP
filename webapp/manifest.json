@@ -62,6 +62,11 @@
       "productos1":{
         "type": "sap.ui.model.json.JSONModel",
         "uri": "productsData1.json"
+      },
+
+      "tasks":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "tasks.json"
       }
     },
     "resources": {
@@ -98,6 +103,14 @@
           "target": [
             "TargetView21"
           ]
+        },
+
+        {
+          "name": "View23",
+          "pattern": "View23",
+          "target": [
+            "TargetView23"
+          ]
         }
       ],
       "targets": {
@@ -109,6 +122,11 @@
          "TargetView21": {
           "id": "View21",
           "name": "View21"
+        },
+
+         "TargetView23": {
+          "id": "View23",
+          "name": "View23"
         }
       }
     },

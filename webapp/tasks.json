@@ -1,0 +1,8 @@
+{
+  "tasks": [
+    { "id": "1", "title": "Revisar correos" },
+    { "id": "2", "title": "Actualizar documentación" },
+    { "id": "3", "title": "Reunión con el equipo" },
+    { "id": "4", "title": "Desplegar nueva versión" }
+  ]
+}

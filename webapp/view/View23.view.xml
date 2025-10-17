@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.View23"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:dnd="sap.ui.core.dnd"
+    height="100%">
+
+    <Page id="taskPage" title="Lista de Tareas" class="sapUiContentPadding">
+        <content>
+            <List
+                id="taskList"
+                mode="None"
+                items="{tasks>/tasks}">
+
+                <dragDropConfig>
+                    <dnd:DragDropInfo id="_IDGenDragDropInfo"
+                        sourceAggregation="items"
+                        targetAggregation="items"
+                        dropPosition="Between"
+                        dropLayout="Vertical"
+                        groupName="taskGroup"
+                        drop="onDrop"/>
+                </dragDropConfig>
+
+                <StandardListItem id="_IDGenStandardListItem"
+                    title="{tasks>title}"
+                    type="Inactive"
+                    press="onItemPress">
+                    <dragDropConfig>
+                        <dnd:DragDropInfo id="_IDGenDragDropInfo1" groupName="taskGroup"/>
+                    </dragDropConfig>
+                </StandardListItem>
+
+            </List>
+        </content>
+    </Page>
+</mvc:View>
