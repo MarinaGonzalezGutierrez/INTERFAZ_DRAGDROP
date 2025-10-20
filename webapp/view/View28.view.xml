@@ -1,0 +1,32 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.View28"
+     xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:table="sap.ui.table"
+    xmlns="sap.m"
+    displayBlock="true"
+   >
+
+ <Page
+        id="page28"
+        title="Ejercicio 28"
+    >
+
+
+
+<VBox class="sapUiSmallMargin">
+    <ComboBox
+      id="comboBox"
+      items="{
+        path: '/items',
+        sorter: { path: 'name' }
+      }"
+      selectionChange="onSelectionChange"
+      liveChange="onLiveChange">
+      <core:Item key="{id}" text="{name}" />
+    </ComboBox>
+  </VBox>
+
+
+</Page>
+</mvc:View>

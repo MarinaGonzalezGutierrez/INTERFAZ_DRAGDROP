@@ -72,5 +72,23 @@
 					</layoutData>
 				</Button>
 
+	<Button id="botonView28" type="Accept"
+						text="Vista con un ComboBox"
+						press="onGoView28">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData8" growFactor="1" />
+					</layoutData>
+				</Button>
+
+	<Button id="botonView29" type="Accept"
+						text="Tabla elección múltiple y botón eliminar elementos seleccionados."
+						press="onGoView29">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData9" growFactor="1" />
+					</layoutData>
+				</Button>
+
     </Page>
 </mvc:View>
