@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.View27"
+     xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:table="sap.ui.table"
+    xmlns="sap.m"
+    displayBlock="true"
+   >
+
+ <Page
+        id="page27"
+        title="Ejercicio 27"
+    >
+
+
+<Button
+    text="Cambiar tema"
+    icon="sap-icon://contrast"
+    press=".onThemeSwitch"
+    class="sapUiSmallMargin"/>
+
+
+
+<Table items="{clientes>/clientes}">
+    <columns>
+        <Column><Text text="id"/></Column>
+        <Column><Text text="nombre"/></Column>
+        <Column><Text text="email"/></Column>
+        <Column><Text text="telefono"/></Column>
+        <Column><Text text="direccion"/></Column>
+        <Column><Text text="activo"/></Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+            <cells>
+                <Text text="{clientes>id}"/>
+                <Text text="{clientes>nombre}"/>
+                <Text text="{clientes>email}"/>
+                <Text text="{clientes>telefono}"/>
+                <Text text="{clientes>direccion}"/>
+                <Text text="{clientes>activo}"/>
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
+
+</Page>
+</mvc:View>

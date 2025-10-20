@@ -1,0 +1,58 @@
+<mvc:View
+    controllerName="ejercicio15.project1.controller.View26"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+    xmlns:f="sap.f">
+
+
+<f:FlexibleColumnLayout
+        id="fcl"
+        layout="OneColumn"
+        defaultTwoColumnLayoutType="TwoColumnsMidExpanded"
+        backgroundDesign="Solid">
+
+        <f:beginColumnPages>
+            <m:Page title="Clientes">
+                <m:List
+                    id="clientesList"
+                    items="{clientes>/clientes}"
+                    itemPress="onClientePress">
+                    <m:StandardListItem
+                        title="{clientes>nombre}"
+                        description="{clientes>email}"
+                        icon="sap-icon://person"
+                        type="Active" />
+                        
+ </m:List>
+            </m:Page>
+        </f:beginColumnPages>
+
+<f:midColumnPages>
+    <m:Page id="midPage" title="Detalle del Cliente">
+        <m:ObjectHeader
+            title="{clientes>nombre}"
+            number="{clientes>id}"
+            intro="{clientes>email}" />
+        <m:Text text="Teléfono: {clientes>telefono}" />
+        <m:Text text="Dirección: {clientes>direccion}" />
+        <m:Text text="Activo: {clientes>activo}" />
+    </m:Page>
+</f:midColumnPages>
+
+
+
+    <f:endColumnPages>
+        <m:Page title="Información adicional">
+            <m:Text text="Aquí puedes mostrar más detalles del cliente, como historial, notas, etc." />
+            <m:Text text="ID del cliente: {clientes>id}" />
+            <m:Text text="Nombre: {clientes>nombre}" />
+        </m:Page>
+    </f:endColumnPages>
+
+        </f:FlexibleColumnLayout>
+
+
+</mvc:View>

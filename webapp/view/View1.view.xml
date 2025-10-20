@@ -54,7 +54,23 @@
 					</layoutData>
 				</Button>
 
-    
+	<Button id="botonView26" type="Accept"
+						text="Aplicacion responsive"
+						press="onGoView26">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData6" growFactor="1" />
+					</layoutData>
+				</Button>
+
+    <Button id="botonView27" type="Accept"
+						text="Modo claro/oscuro"
+						press="onGoView27">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData7" growFactor="1" />
+					</layoutData>
+				</Button>
 
     </Page>
 </mvc:View>

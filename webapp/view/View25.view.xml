@@ -4,12 +4,12 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns:m="sap.m"
-    xmlns="sap.uxap"
->
+    xmlns="sap.uxap">
+
     <ObjectPageLayout
         id="_IDGenObjectPageLayout"
-        showTitleInHeaderContent="true"
-    >
+        showTitleInHeaderContent="true">
+    
         <headerTitle>
             <ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle">
                 <expandedHeading>

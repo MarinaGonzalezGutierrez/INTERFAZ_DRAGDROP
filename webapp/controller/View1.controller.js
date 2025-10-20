@@ -30,6 +30,16 @@ sap.ui.define([
             router1.navTo("View25");
         },
 
+        onGoView26: function(){
+            var router1 = sap.ui.core.UIComponent.getRouterFor(this);
+            router1.navTo("View26");
+        },
+
+        onGoView27: function(){
+            var router1 = sap.ui.core.UIComponent.getRouterFor(this);
+            router1.navTo("View27");
+        },
+
 
     });
 });
