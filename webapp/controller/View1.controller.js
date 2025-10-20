@@ -50,9 +50,9 @@ sap.ui.define([
             router1.navTo("View29");
         },
 
-        onGoView29: function(){
+        onGoView30: function(){
             var router1 = sap.ui.core.UIComponent.getRouterFor(this);
-            router1.navTo("View29");
+            router1.navTo("View30");
         }
 
 

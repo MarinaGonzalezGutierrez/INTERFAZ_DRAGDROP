@@ -90,5 +90,14 @@
 					</layoutData>
 				</Button>
 
+	<Button id="botonView30" type="Accept"
+						text="Calificar productos con estrellas"
+						press="onGoView30">
+						
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData10" growFactor="1" />
+					</layoutData>
+				</Button>
+
     </Page>
 </mvc:View>
