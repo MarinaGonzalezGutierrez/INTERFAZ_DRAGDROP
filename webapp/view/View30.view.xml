@@ -1,31 +1,41 @@
 <mvc:View
     controllerName="ejercicio15.project1.controller.View30"
-     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:table="sap.ui.table"
     xmlns="sap.m"
-    displayBlock="true"
-   >
+    displayBlock="true">
 
- <Page
-        id="page29"
-        title="Ejercicio 30"
-    >
+    <!-- <Page id="_IDGenPage" title="Ejercicio 30">
+        <VBox id="_IDGenVBox2" class="sapUiSmallMargin">
+            <Label id="_IDGenLabel" text="Rating Indicator" labelFor="RI_S"/>
+            <RatingIndicator
+                id="RI_S"
+                maxValue="5"
+                value="{/rating}"
+                iconSize="22px"
+                liveChange="onRatingChange"/>
+            <Button id="_IDGenButton4" text="Guardar Calificación" press="onSaveRating"/>
+            <Text id="_IDGenText7" text="Valor actual: {/rating}" class="sapUiSmallMarginTop"/>
+        </VBox>
+    </Page> -->
 
+    
+<Page id="_IDGenPage" title="Calificación de Productos">
+    <List id="_IDGenList"
+      items="{/products}"
+      headerText="Selecciona una calificación">
+      <items>
+        <CustomListItem id="_IDGenCustomListItem">
+          <HBox id="_IDGenHBox1" justifyContent="SpaceBetween" alignItems="Center">
+            <Text id="_IDGenText7" text="{name}" />
+            <RatingIndicator id="_IDGenRatingIndicator"
+              value="{rating}"
+              maxValue="5"
+              liveChange="onRatingChange" />
+          </HBox>
+        </CustomListItem>
+      </items>
 
+ </List>
+  </Page>
 
-  <VBox class="sapUiSmallMargin">
-    <Label text="Rating Indicator with size S" labelFor="RI_S"/>
-    <RatingIndicator
-      id="RI_S"
-      maxValue="5"
-      value="{/rating}"
-      iconSize="22px"
-      tooltip="Rating Tooltip"
-      liveChange="onRatingChange"
-    />
-    <Button text="Guardar Calificación" press="onSaveRating"/>
-  </VBox>
-
-</Page>
 </mvc:View>

@@ -72,6 +72,11 @@
       "clientes":{
         "type": "sap.ui.model.json.JSONModel",
         "uri": "clientes.json"
+      },
+
+      "products":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "products.json"
       }
     },
     "resources": {
